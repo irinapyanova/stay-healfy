@@ -1,0 +1,145 @@
+.nutrition {
+  padding: 100px 0;
+
+  @media (max-width: $df-mobile) {
+    padding: 60px 0;
+  }
+}
+
+.nutrition-inner {
+  @include container;
+}
+
+.nutrition-wrap {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
+}
+
+.nutrition-img-wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  flex-basis: 55%;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    height: 270px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+.nutrition-img-heading {
+  display: flex;
+  align-items: center;
+  padding: 15px 37px;
+  background-color: $color-dark;
+  border-radius: 10px;
+
+  @media (max-width: $df-mobile) {
+    padding: 12px 27px;
+  }
+}
+
+.pos-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.pos-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.nutrition-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  @media (max-width: $df-mobile) {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+  }
+}
+
+.nutrition-figure {
+  display: block;
+  margin-left: 10px;
+  color: $color-light;
+}
+
+.nutrition-pic {
+  display: inline-block;
+  height: 274px;
+  width: 472px;
+  border-radius: 10px;
+
+  @media (max-width: $df-mobile) {
+    height: 148px;
+    width: 244px;
+  }
+}
+
+.loc-rigth {
+  float: right;
+
+  @media (max-width: $df-mobile) {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.loc-left {
+  float: left;
+  margin-top: -64px;
+
+  @media (max-width: $df-mobile) {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: -34px;
+  }
+}
+
+.nutrition-info {
+  margin-left: 60px;
+  flex-basis: 45%;
+
+  @media (max-width: $df-mobile) {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.nutrition-heading {
+  color: $color-dark-text;
+}
+
+.nutrition-title {
+  @include section-title;
+  margin-bottom: 10px;
+  text-transform: capitalize
+}
+
+.nutrition-text {
+  margin-bottom: 30px;
+  color: $color-dark-text;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: capitalize;
+}

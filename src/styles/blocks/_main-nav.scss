@@ -1,0 +1,65 @@
+.main-nav {
+
+  @media (max-width: $df-mobile) {
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    background-color: $color-dark;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.25s;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    @media (max-width: $df-mobile) {
+      display: block;
+      margin-top: 50px;
+      text-align: center;
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: 25px 37px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    &:hover {
+      background-image: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+    }
+
+    @media (max-width: $df-mobile) {
+      width: 100%;
+      padding: 20px 10px;
+    }
+  }
+}
+
+.main-nav-open {
+  opacity: 1;
+  left: 0;
+}
+
+.exit {
+  display: none;
+
+  @media (max-width: $df-mobile) {
+    position: absolute;
+    right: 10px;
+    padding: 0px;
+    top: -10px;
+    display: block;
+    color: $color-light;
+    font-weight: 500;
+    font-size: 60px;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+}

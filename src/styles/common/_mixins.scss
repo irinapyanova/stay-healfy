@@ -1,0 +1,36 @@
+@mixin container {
+  max-width: 1110px + 20px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@mixin logo {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+@mixin btn {
+  display: inline-block;
+  padding: 15px 37px;
+  color: $color-light;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 28px;
+  background-image: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+
+  @media (max-width: $df-mobile) {
+    margin: 0 auto;
+    width: 180px;
+  }
+}
+
+@mixin section-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}

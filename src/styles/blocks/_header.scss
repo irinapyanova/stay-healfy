@@ -1,0 +1,67 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  color: $color-light;
+  background-color: $color-dark;
+
+  @media (max-width: $df-mobile) {
+    padding: 15px 0;
+  }
+}
+
+.header-inner {
+  @include container;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-btn {
+  display: none;
+  border: none;
+
+  @media (max-width: $df-mobile) {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: $color-dark;
+    border-top: 5px solid $color-light;
+    border-bottom: 5px solid $color-light;
+    transition: all 0.5s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 100%;
+      border-top: 5px solid $color-light;
+    }
+  }
+
+
+}
+
+.logo {
+  @include logo;
+
+  @media (max-width: $df-mobile) {
+    position: relative;
+    z-index: 20;
+  }
+}
+
+.btn-header {
+  @media (max-width: $df-mobile) {
+    display: none;
+  }
+}

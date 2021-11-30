@@ -1,0 +1,168 @@
+.about {
+  padding: 100px 0;
+  text-align: center;
+
+  @media (max-width: $df-mobile) {
+    padding: 60px 0;
+  }
+}
+
+.about-inner {
+  @include container;
+}
+
+.about-heading {
+  color: $color-dark-text;
+}
+
+.about-title-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.about-title-icon {
+  position: absolute;
+  top: -30px;
+  display: block;
+  height: 60px;
+  width: 71px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: $df-mobile) {
+    display: none;
+  }
+}
+
+.about-title {
+  margin: 0 10px;
+  flex-basis: 60%;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: capitalize;
+
+  @media (max-width: $df-mobile) {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 50px;
+  }
+}
+
+.about-text-wrap {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @media (max-width: $df-mobile) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.about-text-item {
+  flex-basis: 33.33%;
+  margin-right: 15px;
+  border-right: 1px solid rgba($color-dark, .4);
+
+  &:last-child {
+    margin-right: 0;
+    border-right: none;
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-right: 0;
+    padding: 0 15px;
+  }
+}
+
+.about-text-number {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+
+  @media (max-width: $df-mobile) {
+    font-size: 28px;
+  }
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+
+  @media (max-width: $df-mobile) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.about-benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  list-style: none;
+  text-align: left;
+
+  @media (max-width: $df-mobile) {
+    display: block;
+  }
+}
+
+.about-benefits-item {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+  margin-bottom: 30px;
+}
+
+.about-benefits-icon {
+  display: inline-block;
+  flex-basis: 14%;
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (max-width: $df-mobile) {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-size: contain;
+  }
+}
+
+.about-benefits-info {
+  flex-basis: 86%;
+}
+
+.about-benefits-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: capitalize;
+}
+
+.about-benefits-text {
+  color: $color-dark-text;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+}

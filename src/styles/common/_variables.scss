@@ -1,0 +1,13 @@
+// colors
+$color-dark: #161D2F;
+$color-dark-text: #222;
+$color-light: #fff;
+
+// breakpoints
+$desktop-bp: 1280px;
+$tablet-bp: 768px;
+$mobile-bp: 320px;
+
+// Значения для медиазапросов по Desktop-first подходу
+$df-tablet: $desktop-bp - 1;
+$df-mobile: $tablet-bp - 1;

@@ -1,0 +1,85 @@
+.lead {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  color: $color-light;
+  text-align: center;
+  background-color: $color-dark;
+}
+
+.lead-inner {
+  @include container;
+}
+
+.lead-heading {
+
+  @media (max-width: $df-tablet) {
+    font-size: 12px;
+  }
+
+}
+
+.lead-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 93px;
+  text-transform: capitalize;
+
+  @media (max-width: $df-tablet) {
+    font-size: 48px;
+    line-height: 80px;
+  }
+
+  @media (max-width: $df-mobile) {
+    font-size: 36px;
+    line-height: 60px;
+  }
+}
+
+.lead-text {
+  margin-bottom: 30px;
+  padding: 0 210px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: capitalize;
+
+  @media (max-width: $df-tablet) {
+    padding: 0 140px;
+  }
+
+  @media (max-width: $df-mobile) {
+    padding: 0 20px;
+  }
+}
+
+.btn-wrap {
+  margin-bottom: 30px;
+
+  @media (max-width: $df-mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.lead-btn {
+  margin-left: 20px;
+  padding: 13px 29px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  border: 1px solid $color-light;
+  border-radius: 28px;
+
+  @media (max-width: $df-mobile) {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 180px;
+  }
+}
+
+.lead-video {
+  width: 100%;
+  border-radius: 10px;
+}

@@ -1,0 +1,123 @@
+.form {
+  padding: 100px 0;
+
+  @media (max-width: $df-mobile) {
+    padding: 60px 0;
+  }
+}
+
+.form-inner {
+  @include container;
+}
+
+.form-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: $color-dark;
+  border-radius: 20px;
+
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    padding: 30px;
+  }
+}
+
+.form-info {
+  flex-basis: 60%;
+
+  @media (max-width: $df-mobile) {
+    text-align: center;
+  }
+}
+
+.form-title {
+  margin-bottom: 30px;
+  color: $color-light;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  text-transform: capitalize;
+
+  @media (max-width: $df-mobile) {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 50px;
+  }
+}
+
+.form-input {
+  margin-right: 30px;
+  width: 280px;
+  color: $color-light;
+  padding: 17px 25px;
+  background-color: inherit;
+  border: 1px solid $color-light;
+  border-radius: 34px;
+
+  &::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: $color-light;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: $df-mobile) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 240px;
+  }
+}
+
+
+.form-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 30%;
+  margin-right: -10px;
+
+  @media (max-width: $df-mobile) {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.form-pic {
+  height: 138px;
+  width: 138px;
+  margin-right: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-position: center;
+
+  &:first-child {
+    margin-top: 30px;
+
+    @media (max-width: $df-mobile) {
+      margin-top: 10px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+
+    @media (max-width: $df-mobile) {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: $df-mobile) {
+    margin-top: 10px;
+    height: 110px;
+    width: 110px;
+  }
+
+}
