@@ -1,6 +1,10 @@
 .form {
   padding: 100px 0;
 
+  @media (max-width: $df-tablet) {
+    padding: 80px 0;
+  }
+
   @media (max-width: $df-mobile) {
     padding: 60px 0;
   }
@@ -18,9 +22,12 @@
   background-color: $color-dark;
   border-radius: 20px;
 
+  @media (max-width: $df-tablet) {
+    display: block;
+    text-align: center;
+  }
 
   @media (max-width: $df-mobile) {
-    display: block;
     padding: 30px;
   }
 }
@@ -83,9 +90,15 @@
   flex-basis: 30%;
   margin-right: -10px;
 
-  @media (max-width: $df-mobile) {
+  @media (max-width: $df-tablet) {
     justify-content: center;
+    width: 350px;
+    margin: 0 auto;
     margin-top: 20px;
+  }
+
+  @media (max-width: $df-mobile) {
+    width: 260px;
   }
 }
 

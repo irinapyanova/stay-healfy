@@ -1,6 +1,10 @@
 .programs {
   padding: 100px 0;
 
+  @media (max-width: $df-tablet) {
+    padding: 80px 0;
+  }
+
   @media (max-width: $df-mobile) {
     padding: 60px 0;
   }
@@ -30,12 +34,17 @@
   }
 }
 
-.programs-slider{
+.programs-slider {
   position: relative;
   margin-top: 30px;
 
-  @media (max-width: $df-mobile) {
+  @media (max-width: $df-tablet) {
+    width: 650px;
     margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  @media (max-width: $df-mobile) {
     width: 300px;
   }
 }
@@ -52,6 +61,10 @@
 .btn-prev {
   left: -43px;
 
+  @media (max-width: $df-tablet) {
+    left: -30px;
+  }
+
   @media (max-width: $df-mobile) {
     display: none;
   }
@@ -59,6 +72,10 @@
 
 .btn-next {
   right: -40px;
+
+  @media (max-width: $df-tablet) {
+    right: -15px;
+  }
 
   @media (max-width: $df-mobile) {
     display: none;
@@ -80,7 +97,7 @@
   object-fit: cover;
   border-radius: 10px;
 
-  @media (max-width: $df-mobile) {
+  @media (max-width: $df-tablet) {
     width: 300px;
   }
 }

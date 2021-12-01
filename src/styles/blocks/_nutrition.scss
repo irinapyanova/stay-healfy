@@ -1,6 +1,10 @@
 .nutrition {
   padding: 100px 0;
 
+  @media (max-width: $df-tablet) {
+    padding: 80px 0;
+  }
+
   @media (max-width: $df-mobile) {
     padding: 60px 0;
   }
@@ -15,6 +19,10 @@
   flex-direction: row-reverse;
   align-items: center;
 
+  @media (max-width: $df-tablet) {
+    justify-content: center;
+  }
+
   @media (max-width: $df-mobile) {
     display: block;
   }
@@ -25,6 +33,10 @@
   top: 0;
   left: 0;
   flex-basis: 55%;
+
+  @media (max-width: $df-tablet) {
+    max-width: 385px;
+  }
 
   @media (max-width: $df-mobile) {
     display: block;
@@ -85,6 +97,11 @@
   width: 472px;
   border-radius: 10px;
 
+  @media (max-width: $df-tablet) {
+    height: 188px;
+    width: 318px;
+  }
+
   @media (max-width: $df-mobile) {
     height: 148px;
     width: 244px;
@@ -106,6 +123,10 @@
   float: left;
   margin-top: -64px;
 
+  @media (max-width: $df-tablet) {
+    margin-top: -48px;
+  }
+
   @media (max-width: $df-mobile) {
     float: none;
     position: absolute;
@@ -118,6 +139,11 @@
 .nutrition-info {
   margin-left: 60px;
   flex-basis: 45%;
+
+  @media (max-width: $df-tablet) {
+    flex-basis: 50%;
+    margin-left: 40px;
+  }
 
   @media (max-width: $df-mobile) {
     margin-left: 0;
