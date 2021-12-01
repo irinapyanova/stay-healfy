@@ -45,7 +45,8 @@
   }
 
   @media (max-width: $df-mobile) {
-    width: 300px;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -56,6 +57,13 @@
   width: 18px;
   height: 31.5px;
   cursor: pointer;
+
+  @media (max-width: $df-mobile) {
+    width: 16px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .btn-prev {
@@ -130,6 +138,10 @@
 
 .slide-link-wrap {
   display: flex;
+
+  @media (max-width: $df-mobile) {
+    justify-content: center;
+  }
 }
 
 .slide-link {

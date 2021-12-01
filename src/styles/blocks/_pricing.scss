@@ -82,7 +82,7 @@
   }
 
   @media (max-width: $df-mobile) {
-    display: flex;
+    display: block;
   }
 }
 
@@ -129,7 +129,8 @@
 .active[data-tab-content]{
 
   @media (max-width: $df-mobile) {
-    display: flex;
+    display: block;
+    margin: 0 auto;
   }
 }
 
